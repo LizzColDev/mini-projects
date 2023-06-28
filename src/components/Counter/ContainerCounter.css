@@ -1,0 +1,53 @@
+.card.container-counter {
+    border: 3px solid white;
+    min-width: 18rem;
+    background-color: transparent;
+    margin: 24px;
+
+  }
+  
+  .card-header.counter-title {
+    color: #ceecf2;
+    border-bottom: 3px solid white;
+  }
+  
+  .contain-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .number {
+    font-size: 4rem;
+    border: 3px solid #558ed9;
+    text-align: center;
+    min-width: 40%;
+    color: #ceecf2;
+    border-radius: 6px;
+  }
+  
+  .contain-counter button {
+    min-width: 46%;
+    margin: 4px;
+    font-weight: bold;
+  }
+
+  .btn.btn-increase{
+    background-color:#F2E63D;
+    border-color: #F2E63D;
+  }
+
+  .btn.btn-reset{
+    background-color:#1F438C;
+    border-color: #1F438C;
+  }
+
+  .btn.btn-increase:hover{
+    background-color:#558ED9;
+    border-color: #558ED9;
+  }
+
+  .btn.btn-reset:hover{
+    background-color:#3C4359;
+    border-color: #3C4359;
+  }
