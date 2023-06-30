@@ -6,7 +6,7 @@ function InputCalculator({input}) {
   return (
     <Row>
       <Col>
-        <input className="result" type={input} readOnly />
+        <input className="result" readOnly value={input} />
       </Col>
     </Row>
   );
