@@ -14,9 +14,6 @@ function ContainerCounter() {
   };
 
   return (
-    <Card className="container-counter mb-2">
-      <Card.Header className='counter-title'>Interactive Counter</Card.Header>
-
       <Card.Body className='contain-counter'>
         <Card.Text className='number'>{currentNumber}</Card.Text>
         <Button className='btn-increase' onClick={handleClick}>
@@ -26,7 +23,6 @@ function ContainerCounter() {
           Reset
         </Button>
       </Card.Body>
-    </Card>
   );
 }
 

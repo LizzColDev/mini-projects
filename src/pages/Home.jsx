@@ -1,4 +1,5 @@
-import ContainerCounter from "../components/Counter/ContainerCounter"
+import CalculatorPage from "./CalculatorPage"
+import CounterPage from "./CounterPage"
 
 function Home() {
 
@@ -10,7 +11,8 @@ function Home() {
             alignItems: 'center'
         }} 
         >
-      <ContainerCounter/>
+      <CounterPage/>
+      <CalculatorPage/>
     </main>
 
   )

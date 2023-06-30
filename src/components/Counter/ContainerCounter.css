@@ -1,15 +1,4 @@
-.card.container-counter {
-    border: 3px solid white;
-    min-width: 18rem;
-    background-color: transparent;
-    margin: 24px;
 
-  }
-  
-  .card-header.counter-title {
-    color: #ceecf2;
-    border-bottom: 3px solid white;
-  }
   
   .contain-counter {
     display: flex;
