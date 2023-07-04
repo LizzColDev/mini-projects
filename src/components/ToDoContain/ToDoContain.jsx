@@ -27,8 +27,7 @@ function ToDoContain({text, completed, id, completeTodo, deleteTodo}){
                 style={!completed ? itemStyle : null}
                 onClick={handleCompleteTodo}
                 >
-                
-                {text}
+                <span className="todo-text">{text}</span>
                 <CiBookmarkRemove 
                   className="todo-delete-icon"
                   onClick={handleDeleteTodo}

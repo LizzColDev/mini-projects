@@ -4,8 +4,12 @@ div.list-group-item{
     justify-content: space-between;
     align-items: center;
     margin-top: 6px;
+    word-wrap: break-word;
+  text-align: justify;
 }
-
+.todo-text {
+    flex: 0.98;
+  }
 .list-group-item:hover{
     cursor: pointer;
 }
@@ -16,6 +20,7 @@ div.list-group-item.completed{
 }
 
 .todo-delete-icon{  
+    min-width: 24px;
     font-size: 24px;
     transition: color 0.7s;   
     transition: color 0.3s, transform 0.3s;
