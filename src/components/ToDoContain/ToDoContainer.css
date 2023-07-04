@@ -1,0 +1,41 @@
+div.list-group-item{
+    color: #97cfff  ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+}
+
+div.list-group-item.completed{
+    background-color: rgb(0, 23, 43);
+    text-decoration: line-through;
+}
+
+.todo-delete-icon{  
+    font-size: 24px;
+    transition: color 0.7s;   
+    transition: color 0.3s, transform 0.3s;
+}
+
+.todo-delete-icon:hover {
+    cursor: pointer;
+    color: #ee3b77;
+    transform: scale(1.2);
+}
+
+.todo-delete-icon:hover {
+    color: #f22c6e;
+    transform: scale(1.2);
+}
+
+.todo-delete-icon:focus {
+    outline: none;
+}
+
+.todo-delete-icon:active {
+    transform: scale(0.9);
+}

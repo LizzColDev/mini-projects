@@ -1,20 +1,24 @@
+import { Col, Container, Row } from "react-bootstrap"
 import CalculatorPage from "./CalculatorPage"
 import CounterPage from "./CounterPage"
+import ToDoPage from "./ToDoPage"
 
 function Home() {
 
   return (
-    <main
-        style={{  
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-        }} 
-        >
-      <CounterPage/>
-      <CalculatorPage/>
-    </main>
-
+    <Container>
+      <Row>
+        <Col>
+          <CounterPage/>
+        </Col>
+        <Col>
+          <CalculatorPage/>
+        </Col>
+        <Col>
+          <ToDoPage/>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

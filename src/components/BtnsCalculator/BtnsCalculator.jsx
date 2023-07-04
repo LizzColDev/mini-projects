@@ -33,7 +33,7 @@ function BtnsCalculator({addInput, handleClear, handleCalculate }) {
       <Col>
         <Button  onClick={() => addInput('0')} className="number-button">0</Button>
         <Button  onClick={() => addInput('.')} className="number-button">.</Button>
-        <Button onClick={() => handleCalculate ()} variant="success" >=</Button>
+        <Button onClick={() => handleCalculate ()} variant="success" className="operator">=</Button>
         <Button variant="danger" onClick={() => addInput('*')} className="operator">*</Button>
       </Col>
     </Row>

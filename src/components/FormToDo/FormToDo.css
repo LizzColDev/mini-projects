@@ -1,0 +1,10 @@
+button.btn-delete-todo{
+    flex-shrink: 0;
+    margin-left: 6px;
+    background-color: #F48FB1;
+    border: 0;
+}
+
+button.btn-delete-todo:hover{
+    background-color: #f22c6e;
+}
