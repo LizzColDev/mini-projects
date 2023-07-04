@@ -1,6 +1,8 @@
 .card.container-counter {
     border: 3px solid white;
-    min-width: 18rem;
+    min-width: 250px;
+    max-width: 650px;
+    min-height: 430px;
     background-color: transparent;
     margin: 24px;
 
@@ -9,16 +11,17 @@
   .card-header.counter-title {
     color: #ceecf2;
     border-bottom: 3px solid white;
+    width: 100%;
   }
 
   .calculator {
-    max-width: 300px;
-    margin: 0 auto;
+    padding: 12px;
+    min-width: 350px;
     background-color: #0D0D0D;
     border-radius: 5px;
-    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around
   }
