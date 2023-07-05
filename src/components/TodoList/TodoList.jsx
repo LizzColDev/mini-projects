@@ -1,25 +1,25 @@
 import { Container } from "react-bootstrap"
 import FormToDo from "../FormToDo/FormToDo"
 import ToDoContain from "../ToDoContain/ToDoContain"
-import { useState } from "react"
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 function TodoList() {
-    const [todos, setTodos] = useState([]);
-
+    const [todos, saveTodosToLocalStorage] = useLocalStorage('todos', []);
+    
     const addTodo = todo => {
         if(todo.text.trim()){
             todo.text = todo.text.trim();
 
             const currentTodos = [todo, ...todos];
 
-            setTodos(currentTodos);
+            saveTodosToLocalStorage(currentTodos);
         }
     }
 
     const deleteTodo = id =>{
         console.log(id, 'id')
         const currentTodos = todos.filter(todo => todo.id !== id);
-        setTodos(currentTodos)
+        saveTodosToLocalStorage(currentTodos)
     }
 
     const completeTodo = id =>{
@@ -33,7 +33,7 @@ function TodoList() {
             }
             return todo
         });
-        setTodos(currentTodos);
+        saveTodosToLocalStorage(currentTodos);
     }
 
     return (
